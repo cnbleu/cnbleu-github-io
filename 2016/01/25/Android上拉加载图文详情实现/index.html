@@ -73,7 +73,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Do something powerfull." />
+  <meta name="keywords" content="Android," />
 
 
 
@@ -89,15 +89,55 @@
 
 
 
-<meta name="description" content="。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="方寸山">
-<meta property="og:url" content="http://www.cnbleu.com/archives/2017/index.html">
+<meta name="description" content="使用扩展ViewGroup实现上拉加载图文详情，对事件冲突已经做了处理，可嵌套ListView、WebView等自由使用。
+
+##技术特点
+
+完全继承ViewGroup实现的最小功能；
+针对事件冲突、事件消耗进行处理；
+可嵌套ListView、ViewPager、WebView等；
+快速集成。
+
+##效果图
+
+##代码
+先贴代码，见Github。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android上拉加载图文详情实现">
+<meta property="og:url" content="http://www.cnbleu.com/2016/01/25/Android上拉加载图文详情实现/index.html">
 <meta property="og:site_name" content="方寸山">
-<meta property="og:description" content="。">
+<meta property="og:description" content="使用扩展ViewGroup实现上拉加载图文详情，对事件冲突已经做了处理，可嵌套ListView、WebView等自由使用。
+
+##技术特点
+
+完全继承ViewGroup实现的最小功能；
+针对事件冲突、事件消耗进行处理；
+可嵌套ListView、ViewPager、WebView等；
+快速集成。
+
+##效果图
+
+##代码
+先贴代码，见Github。">
+<meta property="og:image" content="http://7xifbq.com1.z0.glb.clouddn.com/Fp1xaC2l40QBC8OKgHJfPt5qtlLs">
+<meta property="og:image" content="http://7xifbq.com1.z0.glb.clouddn.com/Fjq_vDJgvi-7nFtRT8mDZRCCREOB">
+<meta property="og:updated_time" content="2017-02-07T13:58:02.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="方寸山">
-<meta name="twitter:description" content="。">
+<meta name="twitter:title" content="Android上拉加载图文详情实现">
+<meta name="twitter:description" content="使用扩展ViewGroup实现上拉加载图文详情，对事件冲突已经做了处理，可嵌套ListView、WebView等自由使用。
+
+##技术特点
+
+完全继承ViewGroup实现的最小功能；
+针对事件冲突、事件消耗进行处理；
+可嵌套ListView、ViewPager、WebView等；
+快速集成。
+
+##效果图
+
+##代码
+先贴代码，见Github。">
+<meta name="twitter:image" content="http://7xifbq.com1.z0.glb.clouddn.com/Fp1xaC2l40QBC8OKgHJfPt5qtlLs">
 
 
 
@@ -125,13 +165,13 @@
 
 
 
-  <link rel="canonical" href="http://www.cnbleu.com/archives/2017/"/>
+  <link rel="canonical" href="http://www.cnbleu.com/2016/01/25/Android上拉加载图文详情实现/"/>
 
 
 
 
 
-  <title> 归档 | 方寸山 </title>
+  <title> Android上拉加载图文详情实现 | 方寸山 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -166,7 +206,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -288,66 +328,261 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 1 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
 
-      
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://www.cnbleu.com/2016/01/25/Android上拉加载图文详情实现/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="风清">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/img/author.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="方寸山">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="方寸山" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Android上拉加载图文详情实现
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-01-25T17:20:02+08:00">
+                2016/01/25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/01/25/Android上拉加载图文详情实现/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/25/Android上拉加载图文详情实现/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2016/01/25/Android上拉加载图文详情实现/" class="leancloud_visitors" data-flag-title="Android上拉加载图文详情实现">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
       
 
       
+        <blockquote>
+<p>使用扩展ViewGroup实现上拉加载图文详情，对事件冲突已经做了处理，可嵌套ListView、WebView等自由使用。</p>
+</blockquote>
+<p>##技术特点</p>
+<ol>
+<li>完全继承ViewGroup实现的最小功能；</li>
+<li>针对事件冲突、事件消耗进行处理；</li>
+<li>可嵌套ListView、ViewPager、WebView等；</li>
+<li>快速集成。</li>
+</ol>
+<p>##效果图</p>
+<p><img src="http://7xifbq.com1.z0.glb.clouddn.com/Fp1xaC2l40QBC8OKgHJfPt5qtlLs" alt=""></p>
+<p>##代码</p>
+<p>先贴代码，见<a href="https://github.com/cnbleu/SlideDetailsLayout" target="_blank" rel="external">Github</a>。</p>
+<a id="more"></a>
+<p>##快速使用</p>
+<p>与一般的组件使用方式类似，直接在xml中导入即可，需要注意的是，<code>SlideDetailsLayout</code>仅获取子节点中的前两个View，其中第一个作为Front，即概略视图；第二个作为Behind，即图文详情页面。</p>
+<p>此处仅列出关键代码，详细代码请参见demo。</p>
+<ol>
+<li><p>布局导入</p>
+<p> 文件名称：activity_main.xml</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;cn.bleu.widget.slidedetails.SlideDetailsLayout
+    android:id=&quot;@+id/slidedetails&quot;
+    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;
+    app:duration=&quot;500&quot;
+    app:percent=&quot;0.4&quot;
+    app:default_panel=&quot;front&quot;
+    android:layout_width=&quot;match_parent&quot;
+    android:layout_height=&quot;match_parent&quot;&gt;
+
+    &lt;FrameLayout
+        android:id=&quot;@+id/slidedetails_front&quot;
+        android:layout_width=&quot;match_parent&quot;
+        android:layout_height=&quot;match_parent&quot;/&gt;
+
+    &lt;WebView
+        android:id=&quot;@+id/slidedetails_behind&quot;
+        android:layout_width=&quot;match_parent&quot;
+        android:layout_height=&quot;match_parent&quot;
+        android:background=&quot;#FF0&quot;/&gt;
+
+&lt;/cn.bleu.widget.slidedetails.SlideDetailsLayout&gt;
+</code></pre><p> 配置信息如下：</p>
+<ol>
+<li>duration：动画时长，默认为300ms；</li>
+<li>percent：切换的阈值百分比，如0.2表示滑动具体为屏幕高度的20%时切换；</li>
+<li><p>default_panel：默认展示的面板，仅接受两个enum值：front、behind。</p>
+<p>FrameLayout以及WebView可以切换为任何你想要的View类型，当然可能会存在事件冲突，关于事件冲突的解决参考下文。</p>
+</li>
+</ol>
+</li>
+<li><p>代码调用：</p>
+<p> <code>SlideDetailsLayout</code>支持代码动态调用smoothOpen()来开启第二个面板，smoothClose来关闭第二个面板，默认情况，面板是关闭状态。</p>
+</li>
+<li><p>扩展：</p>
+<p> 如果你嵌套的View与<code>SlideDetailsLayout</code>有事件冲突，你可以覆写<code>canChildScrollVertically(direction)</code>方法来进行拦截处理。direction为负数时表示向下滑动，反之表示向上滑动。</p>
+</li>
+</ol>
+<p>##实现思路</p>
+<p>一个最小的功能集应该包含以下三个方面：</p>
+<ol>
+<li>包含两个面板，且可以在上下滑动的时候切换；</li>
+<li>嵌套ListView及WebView时可以正常滑动（图文详情部分假设是通过WebView加载H5页面）；</li>
+<li>允许通过代码调用切换面板及切换事件通知。</li>
+</ol>
+<p>###上下滑动</p>
+<ol>
+<li><p>通过<code>onInterceptTouchEvent</code>进行事件拦截后，在<code>onTouchEvent</code>方法中对触摸信息做进一步处理可以实现竖直方向的滑动；</p>
+</li>
+<li><p>如下图：<br> <img src="http://7xifbq.com1.z0.glb.clouddn.com/Fjq_vDJgvi-7nFtRT8mDZRCCREOB" alt=""></p>
+<p> Front、Behind面板是收尾相连上下平铺的两个面板，Front面板的高度为Height，<code>Top</code>为Front面板的最顶端，也是坐标系中x轴所在的位置，实红线与虚红线之间的部分为屏幕区域。我们要在屏幕区域滑动两个面板只需要改变两个面板在y轴方向的位移（有正负方向）即可。</p>
+</li>
+<li><p>使滑动生效</p>
+<p> 我们知道，自定义布局中有非常重要的两个环节<code>onMeasure</code>(测量)和<code>onLayout</code>(布局)。测量决定了View的所占的大小，布局决定了View所处的位置。实现滑动的关键思路就在这里，我们在<code>onLayout</code>方法中根据通过onInterceptTouchEvent、onTouchEvent得到的滑动信息进行计算而得到布局的位置信息，并把这个位置信息设置到子View上面即可实现滑动。</p>
+</li>
+<li><p>标尺</p>
+<p> 标尺，即：offset，相对于top的位移。Front面板展示时，offset为0，Behind面板展示时，offset为<code>Height</code>。此后所有的计算都是相对于该标尺。</p>
+</li>
+</ol>
+<p>###事件冲突处理</p>
+<p>假设父View所在的方向为外，子View所在的方向为内，则：事件的拦截方向为从外向内，事件的消耗方向为从内向外。如果当前View不拦截事件的话，有一定机会可以消耗事件；如果当前View拦截事件的话，则子View原则上不能接受后续事件。我们根据具体的需要来拦截事件或者捡漏掉的事件消耗掉，就能处理事件的冲突了。</p>
+<p>###面板切换及切换事件通知</p>
+<p>刚才说到，滑动的标尺是Front相对于Top的移动，且所有的位移计算都是基于该标尺。那我们在切换面板时只需要知道对应的offset值即可。当然，更改完offset值之后不要忘记调用<code>requestLayout()</code>方法。</p>
+
+      
+    </div>
+
+    <div>
+      
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Android/" rel="tag"># Android</a>
+          
         </div>
       
+
+      
+        
       
 
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/02/07/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-02-07T15:49:52+08:00"
-              content="2017/02/07" >
-          02-07
-        </time>
-      </div>
-
-    </header>
+      
+      
+    </footer>
   </article>
 
 
 
-    
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2016/01/25/Android上拉加载图文详情实现/"
+     data-title="Android上拉加载图文详情实现"
+     data-content=""
+     data-url="http://www.cnbleu.com/2016/01/25/Android上拉加载图文详情实现/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
 
-  </section>
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
 
-  
-
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
 
           
           </div>
@@ -355,6 +590,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/01/25/Android上拉加载图文详情实现/"
+           data-title="Android上拉加载图文详情实现" data-url="http://www.cnbleu.com/2016/01/25/Android上拉加载图文详情实现/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -396,6 +639,13 @@
 
           
 
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
           
 
         </nav>
@@ -566,11 +816,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
 
 
   
