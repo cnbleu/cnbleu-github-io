@@ -91,52 +91,43 @@
 
 <meta name="description" content="使用扩展ViewGroup实现上拉加载图文详情，对事件冲突已经做了处理，可嵌套ListView、WebView等自由使用。
 
-##技术特点
-
+技术特点
 完全继承ViewGroup实现的最小功能；
 针对事件冲突、事件消耗进行处理；
 可嵌套ListView、ViewPager、WebView等；
 快速集成。
 
-##效果图
-
-##代码
-先贴代码，见Github。">
+效果图
+代码先贴代码，见Github。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android上拉加载图文详情实现">
 <meta property="og:url" content="http://www.cnbleu.com/2016/01/25/Android上拉加载图文详情实现/index.html">
 <meta property="og:site_name" content="方寸山">
 <meta property="og:description" content="使用扩展ViewGroup实现上拉加载图文详情，对事件冲突已经做了处理，可嵌套ListView、WebView等自由使用。
 
-##技术特点
-
+技术特点
 完全继承ViewGroup实现的最小功能；
 针对事件冲突、事件消耗进行处理；
 可嵌套ListView、ViewPager、WebView等；
 快速集成。
 
-##效果图
-
-##代码
-先贴代码，见Github。">
+效果图
+代码先贴代码，见Github。">
 <meta property="og:image" content="http://7xifbq.com1.z0.glb.clouddn.com/Fp1xaC2l40QBC8OKgHJfPt5qtlLs">
 <meta property="og:image" content="http://7xifbq.com1.z0.glb.clouddn.com/Fjq_vDJgvi-7nFtRT8mDZRCCREOB">
-<meta property="og:updated_time" content="2017-02-07T13:58:02.000Z">
+<meta property="og:updated_time" content="2017-02-07T14:02:38.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android上拉加载图文详情实现">
 <meta name="twitter:description" content="使用扩展ViewGroup实现上拉加载图文详情，对事件冲突已经做了处理，可嵌套ListView、WebView等自由使用。
 
-##技术特点
-
+技术特点
 完全继承ViewGroup实现的最小功能；
 针对事件冲突、事件消耗进行处理；
 可嵌套ListView、ViewPager、WebView等；
 快速集成。
 
-##效果图
-
-##代码
-先贴代码，见Github。">
+效果图
+代码先贴代码，见Github。">
 <meta name="twitter:image" content="http://7xifbq.com1.z0.glb.clouddn.com/Fp1xaC2l40QBC8OKgHJfPt5qtlLs">
 
 
@@ -437,20 +428,16 @@
         <blockquote>
 <p>使用扩展ViewGroup实现上拉加载图文详情，对事件冲突已经做了处理，可嵌套ListView、WebView等自由使用。</p>
 </blockquote>
-<p>##技术特点</p>
-<ol>
+<h2 id="技术特点"><a href="#技术特点" class="headerlink" title="技术特点"></a>技术特点</h2><ol>
 <li>完全继承ViewGroup实现的最小功能；</li>
 <li>针对事件冲突、事件消耗进行处理；</li>
 <li>可嵌套ListView、ViewPager、WebView等；</li>
 <li>快速集成。</li>
 </ol>
-<p>##效果图</p>
-<p><img src="http://7xifbq.com1.z0.glb.clouddn.com/Fp1xaC2l40QBC8OKgHJfPt5qtlLs" alt=""></p>
-<p>##代码</p>
-<p>先贴代码，见<a href="https://github.com/cnbleu/SlideDetailsLayout" target="_blank" rel="external">Github</a>。</p>
+<h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><p><img src="http://7xifbq.com1.z0.glb.clouddn.com/Fp1xaC2l40QBC8OKgHJfPt5qtlLs" alt=""></p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>先贴代码，见<a href="https://github.com/cnbleu/SlideDetailsLayout" target="_blank" rel="external">Github</a>。</p>
 <a id="more"></a>
-<p>##快速使用</p>
-<p>与一般的组件使用方式类似，直接在xml中导入即可，需要注意的是，<code>SlideDetailsLayout</code>仅获取子节点中的前两个View，其中第一个作为Front，即概略视图；第二个作为Behind，即图文详情页面。</p>
+<h2 id="快速使用"><a href="#快速使用" class="headerlink" title="快速使用"></a>快速使用</h2><p>与一般的组件使用方式类似，直接在xml中导入即可，需要注意的是，<code>SlideDetailsLayout</code>仅获取子节点中的前两个View，其中第一个作为Front，即概略视图；第二个作为Behind，即图文详情页面。</p>
 <p>此处仅列出关键代码，详细代码请参见demo。</p>
 <ol>
 <li><p>布局导入</p>
@@ -494,15 +481,13 @@
 <p> 如果你嵌套的View与<code>SlideDetailsLayout</code>有事件冲突，你可以覆写<code>canChildScrollVertically(direction)</code>方法来进行拦截处理。direction为负数时表示向下滑动，反之表示向上滑动。</p>
 </li>
 </ol>
-<p>##实现思路</p>
-<p>一个最小的功能集应该包含以下三个方面：</p>
+<h2 id="实现思路"><a href="#实现思路" class="headerlink" title="实现思路"></a>实现思路</h2><p>一个最小的功能集应该包含以下三个方面：</p>
 <ol>
 <li>包含两个面板，且可以在上下滑动的时候切换；</li>
 <li>嵌套ListView及WebView时可以正常滑动（图文详情部分假设是通过WebView加载H5页面）；</li>
 <li>允许通过代码调用切换面板及切换事件通知。</li>
 </ol>
-<p>###上下滑动</p>
-<ol>
+<h3 id="上下滑动"><a href="#上下滑动" class="headerlink" title="上下滑动"></a>上下滑动</h3><ol>
 <li><p>通过<code>onInterceptTouchEvent</code>进行事件拦截后，在<code>onTouchEvent</code>方法中对触摸信息做进一步处理可以实现竖直方向的滑动；</p>
 </li>
 <li><p>如下图：<br> <img src="http://7xifbq.com1.z0.glb.clouddn.com/Fjq_vDJgvi-7nFtRT8mDZRCCREOB" alt=""></p>
@@ -515,10 +500,8 @@
 <p> 标尺，即：offset，相对于top的位移。Front面板展示时，offset为0，Behind面板展示时，offset为<code>Height</code>。此后所有的计算都是相对于该标尺。</p>
 </li>
 </ol>
-<p>###事件冲突处理</p>
-<p>假设父View所在的方向为外，子View所在的方向为内，则：事件的拦截方向为从外向内，事件的消耗方向为从内向外。如果当前View不拦截事件的话，有一定机会可以消耗事件；如果当前View拦截事件的话，则子View原则上不能接受后续事件。我们根据具体的需要来拦截事件或者捡漏掉的事件消耗掉，就能处理事件的冲突了。</p>
-<p>###面板切换及切换事件通知</p>
-<p>刚才说到，滑动的标尺是Front相对于Top的移动，且所有的位移计算都是基于该标尺。那我们在切换面板时只需要知道对应的offset值即可。当然，更改完offset值之后不要忘记调用<code>requestLayout()</code>方法。</p>
+<h3 id="事件冲突处理"><a href="#事件冲突处理" class="headerlink" title="事件冲突处理"></a>事件冲突处理</h3><p>假设父View所在的方向为外，子View所在的方向为内，则：事件的拦截方向为从外向内，事件的消耗方向为从内向外。如果当前View不拦截事件的话，有一定机会可以消耗事件；如果当前View拦截事件的话，则子View原则上不能接受后续事件。我们根据具体的需要来拦截事件或者捡漏掉的事件消耗掉，就能处理事件的冲突了。</p>
+<h3 id="面板切换及切换事件通知"><a href="#面板切换及切换事件通知" class="headerlink" title="面板切换及切换事件通知"></a>面板切换及切换事件通知</h3><p>刚才说到，滑动的标尺是Front相对于Top的移动，且所有的位移计算都是基于该标尺。那我们在切换面板时只需要知道对应的offset值即可。当然，更改完offset值之后不要忘记调用<code>requestLayout()</code>方法。</p>
 
       
     </div>
@@ -617,8 +600,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/img/author.jpg"
@@ -710,6 +702,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#技术特点"><span class="nav-number">1.</span> <span class="nav-text">技术特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#效果图"><span class="nav-number">2.</span> <span class="nav-text">效果图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#快速使用"><span class="nav-number">4.</span> <span class="nav-text">快速使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现思路"><span class="nav-number">5.</span> <span class="nav-text">实现思路</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#上下滑动"><span class="nav-number">5.1.</span> <span class="nav-text">上下滑动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事件冲突处理"><span class="nav-number">5.2.</span> <span class="nav-text">事件冲突处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#面板切换及切换事件通知"><span class="nav-number">5.3.</span> <span class="nav-text">面板切换及切换事件通知</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
