@@ -1,0 +1,36 @@
+language: node_js
+node_js: stable
+
+# Travis-CI Caching
+cache:
+  directories:
+    - node_modules
+
+
+# S: Build Lifecycle
+install:
+  - npm install
+
+before_script:
+  - npm install -g gulp
+
+script:
+  - gulp dist
+
+after_script:
+  - cd dist
+  - git init
+  - git config user.name "gordon"
+  - git config user.email "keyu404@gmail.com"
+  - git add .
+  - git commit -m "Update docs"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
+# E: Build LifeCycle
+
+branches:
+  only:
+    - master
+env:
+ global:
+   - GH_REF: git@github.com:cnbleu/cnbleu-github-io.git
+   - secure: "0R5tv87MWNMIMVgQ7P9szsxlciW71R99ceDQzJpOToGSgG1bW6Qpo8cRWi1BIt4NjsXSTygJgbgtH3dyzc9/Gk1O11I6YxpS1eMpJmvj9OQ+3MgnxOXg4tRsc1fnoNHT3aKoHlt5TYEW85bOO6WuzrYsR3gzUGaLz9VE8wlki5yJzUsMTJL7vtUtFrsbROo21FsZYkbnIFCHRFju1we5fsTeAPlpKaS0GI3X0EFnDLNNV1S3qxNqxl5K8UIwC7rVTFAa4ZNYA7L5GlN8k8QD+eYPhJVoQw1qTYDKqrhnq6eMsbVan5zS9biwGHgZ1dErf0entLvuMkmtVfm5RfIciAhHijrksHuwPXK61sMeuak89+bmupNkchJHiwBZZEHrm3pD0WdfRwRpFm+NBraJG0LmUnvzF+gIRNhiV4TrK5tdo1XQlt1XFJs1LvVujQegsS3T1g6VdvJELT9kHu6q7xj2XUqUxU+L31WIIPDlFJMzn+HTPI80ifocWe+jZ7Y/XAixWSDb4UCWJOxLSZm1Iy7/7r1Uh5SMKklvdD1cwj3NVsc1FPpIINCH3Qluc/xwyJq+bljqmoFW8eaG8gHi5g4o13l1fi0m23caEGond3ad8kzHO+Ky9DFgxBZekwjd6LF237f1K4s+63jSYsb5BmLept7W9xLI9vAeFzdwaZM="
